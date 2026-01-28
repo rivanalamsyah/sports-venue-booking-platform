@@ -7,7 +7,7 @@ import { Venue } from '../../types';
 import { VenueDetailModal } from './VenueDetailModal';
 
 // Helper for dynamic category styling
-const getCategoryClasses = (isActive: boolean, isDarkMode: boolean) => {
+const getCategoryClasses = (isActive: boolean) => {
     // Simulating the original logic, though passed via props in real code or hook
     // We use dark: classes for dark mode
     if (isActive) {
@@ -36,7 +36,7 @@ export const VenueList = () => {
                             <button
                                 key={cat.id}
                                 onClick={() => setActiveCategory(cat.id)}
-                                className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold transition-all whitespace-nowrap border ${getCategoryClasses(activeCategory === cat.id, false)}`}
+                                className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold transition-all whitespace-nowrap border ${getCategoryClasses(activeCategory === cat.id)}`}
                             >
                                 <cat.icon size={16} />
                                 {cat.name}

@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { X, Calendar, Trophy, Share2 } from 'lucide-react';
+import { X, Calendar, Trophy } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { Event } from '../../types';
 import { Modal } from '../ui/Modal';

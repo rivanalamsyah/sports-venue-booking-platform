@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import { X, Calendar, Share2, Tag } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { BlogPost } from '../../types';
